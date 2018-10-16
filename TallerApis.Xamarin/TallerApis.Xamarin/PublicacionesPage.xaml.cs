@@ -29,7 +29,7 @@ namespace TallerApis.Xamarin
             {
                 var responseJson = await request.Content.ReadAsStringAsync();
                 var response = JsonConvert.DeserializeObject<List<Publicaciones>>(responseJson);
-                listPublicaciones.ItemsSource = response;
+                listPublicaciones.ItemsSource = response; 
 
             } 
         }
