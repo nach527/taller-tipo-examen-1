@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerApis.Xamarin.PublicacionesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listPublicaciones" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+
+                                <Label Text="Id:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Id}"></Label>
+
+                                <Label Text="Usuario:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Usuario}"></Label>
+
+                                <Label Text="Descripcion:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Descripcion}"></Label>
+
+                                <Label Text="FechaPublicacion:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding FechaPublicacion}"></Label>
+
+                                <Label Text="MeGusta:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding MeGusta}"></Label>
+
+                                <Label Text="MeDisgusta:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding MeDisgusta}"></Label>
+
+                                <Label Text="VecesCompartido:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding VecesCompartido}"></Label>
+
+                                <Label Text="EsPrivada:" Grid.Column="0" Grid.Row="0"></Label>
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding EsPrivada}"></Label>
+
+                            </Grid>
+                        </ViewCell>
+
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
